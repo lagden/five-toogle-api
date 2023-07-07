@@ -24,6 +24,6 @@ function cmd(ctx) {
 
 router
 	.get('/', app)
-	.get('/:cmd', cmd)
+	.get('/cmd/:cmd', cmd)
 
 export default router

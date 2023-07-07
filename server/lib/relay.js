@@ -10,7 +10,7 @@ let relay
 
 board.on('ready', () => {
 	relay = new five.Relay({
-		pin: 17,
+		pin: 11,
 	})
 })
 
@@ -21,7 +21,7 @@ function toggle(v) {
 	}
 
 	// Open the circuit.
-	if (v === false) {
+	if (v === true) {
 		relay.open()
 		console.log('relay.isOn - open', relay.isOn)
 	}
