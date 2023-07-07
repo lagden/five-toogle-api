@@ -13,7 +13,7 @@ function cmd(ctx) {
 		cmd,
 	} = ctx.params
 
-	ee.emit('relay.toggle', cmd === 'on')
+	ee.emit('relay.toggle', cmd === 'off')
 
 	ctx.body = {
 		data: {
