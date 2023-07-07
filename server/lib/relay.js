@@ -9,15 +9,10 @@ const board = new five.Board({
 let relay
 
 board.on('ready', () => {
-	const relay = new five.Relay({
+	relay = new five.Relay({
 		pin: 'P1-11',
 		type: 'NC',
 	})
-
-	setInterval(() => {
-		relay.toggle()
-		console.log('relay.isOn -->>>', relay.isOn)
-	}, 1000)
 })
 
 function toggle(v) {
@@ -28,13 +23,13 @@ function toggle(v) {
 	// Open the circuit.
 	if (v === true) {
 		relay.open()
-		console.log('relay.isOn - open', relay.isOn)
+		console.log('relay is openned')
 	}
 
 	// Open the circuit.
 	if (v === false) {
 		relay.close()
-		console.log('relay.isOn - close', relay.isOn)
+		console.log('relay is closed')
 	}
 }
 
