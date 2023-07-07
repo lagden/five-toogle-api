@@ -1,7 +1,9 @@
 import five from 'johnny-five'
 import ee from './ee.js'
 
-const relay = new five.Relay(10)
+const relay = new five.Relay({
+	pin: 17,
+})
 
 function toggle(v) {
 	// Open the circuit.
