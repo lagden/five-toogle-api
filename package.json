@@ -30,7 +30,8 @@
     "debug": "4.3.4",
     "johnny-five": "2.1.0",
     "koa": "2.14.2",
-    "koa-compose": "4.1.0"
+    "koa-compose": "4.1.0",
+    "raspi-io": "11.0.0"
   },
   "devDependencies": {
     "@tadashi/hex-id": "2.0.0",
