@@ -10,7 +10,7 @@ let relay
 
 board.on('ready', () => {
 	const relay = new five.Relay({
-		pin: 11,
+		pin: 'P1-11',
 		type: 'NC',
 	})
 
